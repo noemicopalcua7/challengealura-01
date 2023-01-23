@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Encriptador - desencriptador 2022</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="MyVersion.css">
+        <link href="https://fonts.googleapis.com/css2?family=Hubballi&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <img src="picture/conejoBlaco.png" alt="logoConejo" class="logoMyVer">
+        </header>
+        <main>
+            <section>
+                <textarea class="input-message" id="input" minlength="10" maxlength="300" placeholder="Ingrese el texto aquí" required onkeyup="keyReplace(this)"></textarea>
+
+                <div class="suggestion">
+                    <p>&#9888 Solo letras minuscúlas y sin acentos</p>
+                </div>
+
+                <div class="buttons">
+                    <input type="button" value="Encriptar" class="button-encrypt" onclick="encrypt()">
+
+                    <input type="button" value="Desencriptar" class="button-decrypt" onclick="decrypt()">
+                </div>  
+            </section>
+            
+            <section>
+                <div id="vector">
+                    <img src="picture/conejopng.png" alt="conejoProgramador">
+                    <h1>Ningún mensaje fue encontrado</h1>
+                    <p>Ingresa el texto que desees encriptar o desencriptar</p>
+                </div>
+
+                <div class="box-output" > 
+                    <textarea id="output-msg" class="output-message" minlength="10" maxlength="300" placeholder="MENSAJE" readonly></textarea>
+                </div>
+
+                <div class="box-output">
+                    <input type="button" value="Copiar" class="copy" onclick="copy()">
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p class="footer">Por Noemi Copalcua - &#169Copyright - Image by @OKei via Weibo</p>
+        </footer> 
+        <script src="codeEncrypt.js"></script>
+    </body>
+</html>
+
