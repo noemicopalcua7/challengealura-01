@@ -17,7 +17,7 @@ var finalText = document.querySelector(".output-message");
     }
 
     function extractText(){
-        var area = document.querySelector(".input-message");
+        var areas = document.querySelector(".input-message");
         return area.value;
     }
     
